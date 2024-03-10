@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil District Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Soil District Prediction</h1>
+        <label for="feature1">Average Soilmoisture Level (at 15cm):</label>
+        <input type="number" id="feature1" autocomplete="on" required><br>
+        <label for="feature2">Average SoilMoisture Volume (at 15cm):</label>
+        <input type="number" id="feature2" autocomplete="on" required><br>
+        <label for="feature3">Aggregate Soilmoisture Percentage (at 15cm):</label>
+        <input type="number" id="feature3" autocomplete="on" required><br>
+        <label for="feature4">Volume Soilmoisture percentage (at 15cm):</label>
+        <input type="number" id="feature4" autocomplete="on" required><br>
+        <button onclick="predictDistrict()">Predict</button>
+        <p id="predicted_district"></p>
+    </div>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+</html>

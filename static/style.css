@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ddd;
+    align-items: center;
+}
+
+.container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+h1{
+    margin: 10px;
+}
+
+button{
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+input{
+    text-align: center;
+    padding: 5px;
+}
