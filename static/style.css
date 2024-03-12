@@ -1,25 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
-    margin: 0;
-    padding: 5px;
-    font-family: sans-serif;
+     margin:0;
+     padding:0;
+    font-family: 'Inter', sans-serif;
+    
 }
 
 body{
-    height: 100vh;
-    display: flex;
+    /* height: 100vh; */
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: #ddd;
-    align-items: center;
+    justify-content: center; */
+    /* background-color: #ddd; */
+    /* align-items: center; */
+    margin: 0;
+    padding: 0;
 }
 
 .container{
     padding: 20px;
-    display: flex;
-    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    /* display: flex; */
+    /* flex-direction: column;
     justify-content: center;
-    align-items: center;
-    border: 2px solid black;
+    align-items: center; */
+    /* border: 2px solid black; */
     border-radius: 10px;
 }
 
@@ -28,12 +35,45 @@ h1{
 }
 
 button{
-    padding: 5px;
+    padding: 10px 20px;
     margin: 5px;
-    font-size: 20px;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    /* font-size: 1.5rem; */
+    font-weight: 500;
+    background: white;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin-left: 30vw;
+
+    
+}
+button:hover{
+    background-color: rgb(221, 221, 221);
 }
 
 input{
     text-align: center;
-    padding: 5px;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    background: transparent;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    min-width: 70%;
+    margin: 0.5rem auto;
+}
+
+.container h1{
+    font-size: 4rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* background: rebeccapurple; */
 }
